@@ -1,0 +1,186 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:600,400);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+/*-- Typography --*/
+
+
+h1 {
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+  font-size: 7em;
+  letter-spacing: -0.01em;
+  width: 100%;
+  margin: 0 0 0.4em 0;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  -webkit-animation: anim 1s forwards ease-in-out;
+          animation: anim 1s forwards ease-in-out;
+  
+}
+
+h2 {
+  padding: 13px 0;
+  margin: 0 0 2em 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #fff;
+  /*color: rgb(85, 85, 85);*/
+  
+  text-align: center;
+  background-color: rgb(245, 133, 165);
+}
+
+
+
+
+
+/*-- Body --*/
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(222, 186, 159);
+  background-image: url("/stuff/mfc/img/bgimg.png");
+}
+
+
+/*-- Header --*/
+
+header {
+  position: relative;
+  /*height: 126px;*/
+  margin: auto;
+  margin-bottom: 0px;
+  z-index: -2;
+}
+
+header h2 img {
+  position: relative;
+  top: 4px;
+}
+
+.hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+/*-- Poem --*/
+
+
+article {
+  max-width: 800px;
+  min-width: 500px;
+  margin: auto;
+  font-size: 1.4em;
+  letter-spacing: 0.1px;
+  text-align: left;
+  margin-top: 45px;
+  margin-bottom: 70px;
+  line-height: 34px;
+  color: #fff;
+}
+
+article .giflink.preloaded {
+  color: rgb(21, 69, 142);
+  font-style: italic;
+}
+
+article .no-link {
+  cursor: default;
+}
+
+article p {
+
+}
+
+.final {
+  max-width: 80%;
+  margin: 0 auto;
+
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 400;
+  line-height: 1.6em;
+  padding: 0.4em 0;
+  color: rgb(85, 85, 85);
+  opacity: 0;
+  -webkit-animation: anim 1.4s forwards ease-in-out;
+          animation: anim 1.4s forwards ease-in-out;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  /*border-bottom: 2px solid rgb(21, 70, 142);*/
+}
+
+/*--Footer--*/
+
+footer {
+  overflow: auto;
+  background-color: rgb(245, 133, 165);
+  text-align: center;
+  position: relative;
+
+  left: 0;
+  right: 0;
+  min-height: 100px;
+  
+}
+
+footer p {
+  max-width: 800px;
+  min-width: 500px;
+  color: #fff;
+  font-size: 2em;
+  margin: 1em auto;
+}
+
+footer a {
+  color: rgb(21, 69, 142);
+  text-decoration: none;
+}
+
+
+
+
+
+
+@-webkit-keyframes anim {
+
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+
+}
+
+
+
+
+
+
+@keyframes anim {
+
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+
+}
